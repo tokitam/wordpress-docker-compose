@@ -41,7 +41,8 @@ services:
       - db:db
 
   db:
-    image: mysql:latest # https://hub.docker.com/_/mysql/ - or mariadb https://hub.docker.com/_/mariadb
+    #image: mysql:latest # https://hub.docker.com/_/mysql/ - or mariadb https://hub.docker.com/_/mariadb
+    image: mysql:8.0.37
     ports:
       - ${IP}:3306:3306 # change ip if required
     command: [
